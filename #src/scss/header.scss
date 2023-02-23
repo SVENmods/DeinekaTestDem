@@ -1,0 +1,109 @@
+@import '__variables.scss';
+
+.header {
+     // outline: 1px solid red;
+     color: $color-black-main;
+     font-size: 0.578vw;
+     .icon-circle{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 1.838vw;
+          height: 1.838vw;
+          border-radius: 50%;
+     }
+     &__logo {
+          img{
+               width: 11.2vw;
+          }
+          p{
+               max-width: 7.458vw;
+               line-height: 1.05vw;
+               letter-spacing: 0.02em;
+               font-weight: 400;
+          }
+     }
+
+	&__address {
+          p{
+               line-height: 0.945vw;
+          }
+          .icon-circle{
+               background-image: url('../img/pic/header-map.png');
+               background-repeat: no-repeat;
+               background-size: cover;
+               margin-right: 0.525vw;
+               svg{
+                    width: 0.368vw;
+                    height: 0.389vw;
+                    margin-bottom: 0.263vw;
+               }
+          }
+          
+	}
+     
+     &__show-map {
+          
+          svg{
+               margin-right: 0.525vw;
+               width: 0.63vw;
+               height: 0.788vw;
+               margin-top: 0.158vw;
+          }
+     }
+
+     &__popup-toggle {
+          .icon-circle{
+               background: #F8F8F8;
+               svg{
+                    width: 0.788vw;
+                    height: 0.788vw;
+               }
+          }
+          line-height: 0.998vw;
+          .dot-border-wrapper{
+
+          }
+     }
+
+     &__social {
+          .social-links{
+               .icon-circle{
+
+               }
+               .icon-circle.whatsapp{
+                    background: #20C863;
+                    margin-left: 0.945vw;
+                    svg{
+                         width: 0.735vw;
+                         height: 0.735vw;
+                    }
+               }
+               .icon-circle.telegramm{
+                    background: #2FB3F3;
+                    margin: 0 0.315vw;
+                    svg{
+                         width: 0.671vw;
+                         height: 0.545vw;
+                    }
+                    
+               }
+               .icon-circle.viber{
+                    background: #776EE9;
+                    svg{
+                         width: 0.683vw;
+                         height: 0.735vw;
+                    }
+               }
+          }
+     }
+
+     &__tel {
+     }
+}
+.section-container {
+}
+.d-flex {
+}
+.flex-row {
+}
