@@ -1,0 +1,265 @@
+/*Nullset*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+html {
+  height: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 0.84vw;
+  font-family: "Manrope", "Arial", sans-serif;
+  min-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #FFFFFF;
+}
+
+:root {
+  font-size: 0.8398950131vw;
+}
+
+.scroll-hint {
+  position: sticky;
+  width: 7.2917vw;
+  padding-top: 15.6481vh;
+  max-height: 100vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.scroll-hint__line {
+  height: 45.1852vh;
+  width: 0.2vw;
+  background: black;
+  margin-top: 9.0741vh;
+}
+
+.scroll-hint__text {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-size: 1rem;
+}
+
+.header {
+  color: #2A2A2A;
+  font-size: 0.578vw;
+}
+
+.header .icon-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1.838vw;
+  height: 1.838vw;
+  border-radius: 50%;
+}
+
+.header__logo img {
+  width: 11.2vw;
+}
+
+.header__logo p {
+  max-width: 7.458vw;
+  line-height: 1.05vw;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.header__address p {
+  line-height: 0.945vw;
+}
+
+.header__address .icon-circle {
+  background-image: url("../img/pic/header-map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 0.525vw;
+}
+
+.header__address .icon-circle svg {
+  width: 0.368vw;
+  height: 0.389vw;
+  margin-bottom: 0.263vw;
+}
+
+.header__show-map svg {
+  margin-right: 0.525vw;
+  width: 0.63vw;
+  height: 0.788vw;
+  margin-top: 0.158vw;
+}
+
+.header__popup-toggle {
+  line-height: 0.998vw;
+}
+
+.header__popup-toggle .icon-circle {
+  background: #F8F8F8;
+}
+
+.header__popup-toggle .icon-circle svg {
+  width: 0.788vw;
+  height: 0.788vw;
+}
+
+.header__social .social-links .icon-circle.whatsapp {
+  background: #20C863;
+  margin-left: 0.945vw;
+}
+
+.header__social .social-links .icon-circle.whatsapp svg {
+  width: 0.735vw;
+  height: 0.735vw;
+}
+
+.header__social .social-links .icon-circle.telegramm {
+  background: #2FB3F3;
+  margin: 0 0.315vw;
+}
+
+.header__social .social-links .icon-circle.telegramm svg {
+  width: 0.671vw;
+  height: 0.545vw;
+}
+
+.header__social .social-links .icon-circle.viber {
+  background: #776EE9;
+}
+
+.header__social .social-links .icon-circle.viber svg {
+  width: 0.683vw;
+  height: 0.735vw;
+}
+
+.section-container {
+  width: 86.134vw;
+}
+
+.content {
+  width: 100%;
+  padding-top: 1.82vw;
+}
+
+.content p {
+  margin: 0;
+}
+
+.dot-border-wrapper {
+  cursor: pointer;
+}
+
+.dot-border-wrapper .dot-border {
+  border-bottom: 0.105vw dotted #FD2016;
+  -webkit-transition: all ease-in 0.2s;
+  -o-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.dot-border-wrapper:hover .dot-border {
+  position: relative;
+  margin-right: calc(100% - 2.626vw);
+}

@@ -1,0 +1,100 @@
+.header {
+  color: #2A2A2A;
+  font-size: 0.578vw;
+}
+
+.header .icon-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1.838vw;
+  height: 1.838vw;
+  border-radius: 50%;
+}
+
+.header__logo img {
+  width: 11.2vw;
+}
+
+.header__logo p {
+  max-width: 7.458vw;
+  line-height: 1.05vw;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.header__address p {
+  line-height: 0.945vw;
+}
+
+.header__address .icon-circle {
+  background-image: url("../img/pic/header-map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 0.525vw;
+}
+
+.header__address .icon-circle svg {
+  width: 0.368vw;
+  height: 0.389vw;
+  margin-bottom: 0.263vw;
+}
+
+.header__show-map svg {
+  margin-right: 0.525vw;
+  width: 0.63vw;
+  height: 0.788vw;
+  margin-top: 0.158vw;
+}
+
+.header__popup-toggle {
+  line-height: 0.998vw;
+}
+
+.header__popup-toggle .icon-circle {
+  background: #F8F8F8;
+}
+
+.header__popup-toggle .icon-circle svg {
+  width: 0.788vw;
+  height: 0.788vw;
+}
+
+.header__social .social-links .icon-circle.whatsapp {
+  background: #20C863;
+  margin-left: 0.945vw;
+}
+
+.header__social .social-links .icon-circle.whatsapp svg {
+  width: 0.735vw;
+  height: 0.735vw;
+}
+
+.header__social .social-links .icon-circle.telegramm {
+  background: #2FB3F3;
+  margin: 0 0.315vw;
+}
+
+.header__social .social-links .icon-circle.telegramm svg {
+  width: 0.671vw;
+  height: 0.545vw;
+}
+
+.header__social .social-links .icon-circle.viber {
+  background: #776EE9;
+}
+
+.header__social .social-links .icon-circle.viber svg {
+  width: 0.683vw;
+  height: 0.735vw;
+}
+
+.section-container {
+  width: 86.134vw;
+}
