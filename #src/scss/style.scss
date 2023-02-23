@@ -11,11 +11,39 @@ body{
      font-family: $font-family-regular;
      min-width: $minWidth;
      display: flex;
-     flex-direction: column;
-     padding: 15px 17px 0 17px;
+     flex-direction: row;
      background: $color-background-main;
 }
 
 :root{
-     font-size: 16px;
+     font-size: 2.1333vw;
 }
+
+.scroll-hint {
+     width: 7.2917vw;
+     // outline: 1px solid red;
+     padding-top: 15.6481vh;
+     // font-family: p
+     &__line {
+          height: 45.1852vh;
+          width: 0.2vw;
+          background: $color-white-transparent;
+          margin-top: 3.5185vh;
+     }
+
+     &__mouse {
+     }
+     &__text{
+          transform: rotate(-90deg);
+          font-size: .5rem;
+          // letter-spacing: 0.1em;
+          color: $color-white-transparent;
+     }
+
+}
+
+.content{
+     width: 100%;
+     // outline: 1px solid red;
+}
+

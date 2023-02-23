@@ -7,11 +7,18 @@
 })
 
 <body>
-     <header></header>
+     <div class="scroll-hint d-flex flex-column justify-content-center align-items-center">
+          <div class="scroll-hint__text">Scroll down</div>
+          <div class="scroll-hint__line"></div>
+          <div class="scroll-hint__mouse"></div>
+     </div>
+     <div class="content">
+          <header></header>
 
-     <body></body>
+          <main></main>
 
-     <footer></footer>
+          <footer></footer>
+     </div>
 
      @@include('_script.html')
 </body>
