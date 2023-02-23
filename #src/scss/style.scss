@@ -1,0 +1,21 @@
+//! main imports
+@import "_nullset.scss";
+@import "__variables.scss";
+@import "_mixins.scss";
+html{
+     height: auto;
+     scroll-behavior: smooth;
+}
+body{
+     font-size: $fontSize;
+     font-family: $font-family-regular;
+     min-width: $minWidth;
+     display: flex;
+     flex-direction: column;
+     padding: 15px 17px 0 17px;
+     background: $color-background-main;
+}
+
+:root{
+     font-size: 16px;
+}
