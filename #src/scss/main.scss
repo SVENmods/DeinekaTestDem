@@ -7,4 +7,80 @@
      background-repeat: no-repeat;
      background-size: cover;
      color: $color-background-main;
+
+	&__btn {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          width: 21.008vw;
+          height: 5.252vw;
+          font-weight: 600;
+          font-size: 0.84vw;
+          line-height: 1.261vw;
+          border-radius: 26.261vw;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+	}
+
+     &__btn:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.601), transparent);
+          transition: all 650ms;
+     }
+
+     &__btn:hover:before {
+          left: 100%;
+     }
+
+     &__btn-red{
+          background: $color-red-border;
+          p{
+               max-width: 13.393vw;
+          }
+          svg{
+               width: 1.155vw;
+               height: 1.155vw;
+               margin-left: 0.735vw;
+          }
+     }
+
+     &__btn-tr{
+          background: rgba(0, 0, 0, 0.45);
+          border: 0.053vw solid $color-background-main;
+          svg{
+               width: 1.576vw;
+               height: 1.576vw;
+               margin-right: 0.63vw;
+          }
+     }
+
+     .h1 {
+          font-size: 3.414vw;
+          line-height: 4.989vw;
+          max-width: 53.099vw;
+     }
+     
+     .h1, .h3{
+          letter-spacing: 0.02em;
+          font-weight: 400;
+     }
+
+     .h3 {
+          font-size: 1.418vw;
+          line-height: 2.363vw;
+          margin: 2.363vw 0;
+     }
+
+     .advantages {
+     }
+     .advantages-block {
+     }
+
 }
