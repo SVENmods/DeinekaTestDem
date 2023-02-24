@@ -50,11 +50,15 @@
                height: 0.788vw;
                margin-top: 0.158vw;
           }
+          letter-spacing: 0.05em;
+          font-weight: 700;
+          line-height: 0.788vw;
      }
 
      &__popup-toggle {
           .icon-circle{
                background: #F8F8F8;
+               margin-right: 0.578vw;
                svg{
                     width: 0.788vw;
                     height: 0.788vw;
@@ -62,17 +66,21 @@
           }
           line-height: 0.998vw;
           .dot-border-wrapper{
-
+               letter-spacing: 0.05em;
           }
      }
 
      &__social {
+          p{
+               line-height: 0.945vw;
+               letter-spacing: 0.03em;
+          }
           .social-links{
                .icon-circle{
 
                }
                .icon-circle.whatsapp{
-                    background: #20C863;
+                    background: $color-green;
                     margin-left: 0.945vw;
                     svg{
                          width: 0.735vw;
@@ -99,12 +107,49 @@
      }
 
      &__tel {
+          line-height: 0.525vw;
+     }
+     &__tel-time{
+          letter-spacing: 0.02em;
+          font-size: 0.63vw;
+          margin-bottom: 0.21vw;
+          .online-dot{
+               margin-right: 0.315vw;
+               background: $color-green;
+          }
+     }
+     &__tel-main{
+          font-weight: 700;
+          font-size: 1.05vw;
+          margin: 0.315vw 0;
+          .tel-arrow{
+               margin-left: 0.525vw;
+          }
+     }
+     &__tel-popup{
+          font-size: 0.63vw;
+          line-height: 1.103vw;
+          letter-spacing: 0.05em;
+          svg{
+               margin-left: 0.315vw;
+               width: 0.315vw;
+               height: 0.315vw;
+          }
      }
 }
-.section-container {
-     width: 86.134vw;
+
+
+.nav {
+     &__link {
+          a{
+               font-weight: 600;
+               font-size: 0.63vw;
+               line-height: 0.84vw;
+               letter-spacing: .15em;
+               text-transform: uppercase;
+               color: $color-black-main;
+          }
+     }
 }
-.d-flex {
-}
-.flex-row {
-}
+
+

@@ -44,7 +44,7 @@
 }
 
 //* Custom scroll-bar
-@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+@mixin scrollbars($size, $radius, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
 	::-webkit-scrollbar {
 		width:  $size;
 		height: $size;
@@ -52,6 +52,7 @@
 
 	::-webkit-scrollbar-thumb {
 		background: $foreground-color;
+		border-radius: $radius;
 	}
 
 	::-webkit-scrollbar-track {

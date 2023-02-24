@@ -10,15 +10,13 @@
      <div class="scroll-hint d-flex flex-column justify-content-start align-items-center">
           <div class="scroll-hint__text">Scroll down</div>
           <div class="scroll-hint__line"></div>
-          <div class="scroll-hint__mouse"></div>
+          <div class="scroll-hint__mouse d-flex justify-content-center align-items-center">
+               <div class="online-dot"></div>
+          </div>
      </div>
      <div class="content">
           @@include('_header.html'})
-          <div class="divider"></div>
-          <main class="main">
-               <section class="section-container"></section>
-          </main>
-
+          @@include('_main.html'})
           <footer class="footer"></footer>
      </div>
 

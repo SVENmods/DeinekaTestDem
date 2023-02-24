@@ -5,6 +5,7 @@
 html{
      height: auto;
      scroll-behavior: smooth;
+     @include scrollbars(.3em, 0.788vw, $color-red-border, $color-white-transparent);
 }
 body{
      font-size: $fontSize;
@@ -13,7 +14,7 @@ body{
      display: flex;
      flex-direction: row;
      background: $color-background-main;
-     // height: 100000px;
+     height: 105.042vw;
 }
 
 :root{
@@ -24,30 +25,59 @@ body{
 
 .scroll-hint {
      position: sticky;
+     padding-top: 3.676vw;
+     top: 8.351vw;
      width: 7.2917vw;
-     // outline: 1px solid red;
-     padding-top: 15.6481vh;
-     // font-family: p
      max-height: 100vh;
      user-select: none;
      &__line {
           height: 45.1852vh;
           width: 0.2vw;
-          // background: $color-white-transparent;
-          background: black;
+          background: $color-white-transparent;
           margin-top: 9.0741vh;
      }
 
      &__mouse {
-     }
-     &__text{
-          transform: rotate(-90deg);
-          // font-size: 2.1333vw;
-          font-size: 1rem;
-          // letter-spacing: 0.1em;
-          // color: $color-white-transparent;
+          background-image: url('../img/svg/mouse.svg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 0.965vw;
+          height: 1.681vw;
+          margin-top: 1.996vw;
+          .online-dot{
+               border: 0.026vw solid $color-red-border;
+               margin-top: -0.263vw;
+               animation: scrollDown 2s infinite;
+          }
+          @keyframes scrollDown {
+               0%{
+                    margin-top: -5.008px;
+               }
+               25%{
+                    margin-top: 0.21vw;
+               }
+               75%{
+                    margin-top: 0.21vw;
+               }
+               100%{
+                    margin-top: -0.263vw;
+               }
+          }
      }
 
+     &__text{
+          transform: rotate(-90deg);
+          font-size: 0.84vw;
+          letter-spacing: 0.1em;
+          font-weight: 700;
+          line-height: 1.313vw;
+          color: $color-white-transparent;
+     }
+
+}
+
+.section-container {
+     width: 86.134vw;
 }
 
 @import 'header.scss';
@@ -58,6 +88,11 @@ body{
      // outline: 1px solid red;
      p{
           margin: 0;
+     }
+     .divider{
+          width: 100%;
+          border-top: 0.053vw solid $color-black-main;
+          opacity: 0.15;
      }
 }
 
@@ -74,5 +109,21 @@ body{
      }
 }
 
+.online-dot{
+     border-radius: 50%;
+     width: 0.21vw;
+     height: 0.21vw;
+}
+
+.tel-arrow{
+     border-left: 0.131vw solid $color-red-border;
+     border-top: 0.131vw solid $color-red-border;
+     width: 0.473vw;
+     height: 0.473vw;
+     transform: rotate(-135deg);
+}
+
+
+@import 'main.scss';
 
 
