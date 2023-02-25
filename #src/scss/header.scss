@@ -148,6 +148,10 @@
                letter-spacing: .15em;
                text-transform: uppercase;
                color: $color-black-main;
+               transition: all ease-in .2s;
+          }
+          &:hover a{
+               color: $color-red-border;
           }
      }
 }
